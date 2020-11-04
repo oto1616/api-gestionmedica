@@ -38,7 +38,7 @@ class MedicinaController extends Controller
     }
 
     public function leermedicina(){
-        return "holamundo"
+        return "holamundo";
     }
 
     /**
