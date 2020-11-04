@@ -37,6 +37,10 @@ class MedicinaController extends Controller
         return $medicina;
     }
 
+    public function leermedicina(){
+        return "holamundo"
+    }
+
     /**
      * Display the specified resource.
      *

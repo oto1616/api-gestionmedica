@@ -33,8 +33,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //$router->get('medicina','MedicinaController');
 
 
-Route::post('/ingresarmedicina', 'medicina@MedicinaController'); 
-Route::get('/ingresarmedicina', 'medicina@leermedicina-controlador');
+Route::post('/ingresarmedicina', 'MedicinaController@estoesingresarmedicina'); 
+Route::get('/ingresarmedicina', 'MedicinaController@leermedicina');
 
 
 
