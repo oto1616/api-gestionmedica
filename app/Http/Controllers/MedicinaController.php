@@ -53,11 +53,13 @@ class MedicinaController extends Controller
         $cantidad=$medicinas->cantidad;
         $area=$medicinas->area;
 
-        DB::table('medicinas')->insert({
+        DB::table('medicnas')->insert([
             'nombre'=>$nombre,
             'activo'=>$activo,
             'tipo'=>$tipo,
+            'cantidad'=>$cantidad,
             'area'=>$area,
+     
         });
     }
     /**
