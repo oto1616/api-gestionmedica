@@ -46,6 +46,20 @@ class MedicinaController extends Controller
 
     }
 
+    public function estoesingresarmedicina(request $medicinas){
+        $nombre=$medicinas->nombre;
+        $activo=$medicinas->activo;
+        $tipo=$medicinas->tipo;
+        $cantidad=$medicinas->cantidad;
+        $area=$medicinas->area;
+
+        DB::table('medicinas')->insert({
+            'nombre'=>$nombre,
+            'activo'=>$activo,
+            'tipo'=>$tipo,
+            'area'=>$area,
+        });
+    }
     /**
      * Display the specified resource.
      *
