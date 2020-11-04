@@ -60,7 +60,7 @@ class MedicinaController extends Controller
             'cantidad'=>$cantidad,
             'area'=>$area,
      
-        });
+        ]);
     }
     /**
      * Display the specified resource.
