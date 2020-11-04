@@ -53,7 +53,7 @@ class MedicinaController extends Controller
         $cantidad=$medicinas->cantidad;
         $area=$medicinas->area;
 
-        DB::table('medicnas')->insert([
+        DB::table('medicinas')->insert([
             'nombre'=>$nombre,
             'activo'=>$activo,
             'tipo'=>$tipo,
@@ -61,6 +61,7 @@ class MedicinaController extends Controller
             'area'=>$area,
      
         ]);
+        return "ingresado exitosamente";
     }
     /**
      * Display the specified resource.
