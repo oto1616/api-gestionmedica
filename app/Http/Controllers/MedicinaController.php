@@ -38,7 +38,11 @@ class MedicinaController extends Controller
     }
 
     public function leermedicina(){
-        return "holamundo";
+        $medicina = DB::table('medicinas')
+        ->get();
+
+    return $medicina;
+
     }
 
     /**
